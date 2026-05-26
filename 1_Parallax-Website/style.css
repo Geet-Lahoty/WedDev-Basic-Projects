@@ -16,12 +16,12 @@ body {
 
 .pimg2 {
     background-image: url(images/image2.png);
-    min-height: 400px;
+    min-height: 80vh;
 }
 
 .pimg3 {
     background-image: url(images/image3.png);
-    min-height: 400px;
+    min-height: 80vh;
 }
 
 .pimg1,
@@ -53,7 +53,7 @@ body {
 }
 
 .section {
-    padding: 50px 80px;
+    padding: 10px 40px;
     text-align: center;
 }
 
