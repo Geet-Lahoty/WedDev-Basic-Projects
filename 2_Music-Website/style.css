@@ -138,3 +138,12 @@ button:hover {
     background-color: var(--purple300);
     color: white;
 }
+
+.about-music {
+    padding-top: 500px;
+    display: grid;
+    place-items: center;
+    gap: 50px;
+    text-align: center;
+    margin-bottom: 50px;
+}
