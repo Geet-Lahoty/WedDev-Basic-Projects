@@ -99,12 +99,49 @@ h1 {
     box-shadow: 1px 1px 0 black;
 }
 
+select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    padding: 0.5rem 2rem 0.5rem 2rem;
+    border: 2px solid black;
+    border-radius: 5px;
+
+    background: white;
+    font-size: 1rem;
+    font-weight: 600;
+
+    box-shadow: 4px 4px 0 black;
+    cursor: pointer;
+
+    transition: transform 0.2s ease,
+                box-shadow 0.2s ease;
+}
+
+select:hover {
+    transform: translate(2px, 2px);
+    box-shadow: 2px 2px 0 black;
+}
+
+select:focus {
+    outline: none;
+    transform: translate(2px, 2px);
+    box-shadow: 2px 2px 0 black;
+}
+
+option {
+    font-weight: 600;
+    font-size: 1rem;
+}
+
 .converted-amount {
     text-align: center;
     font-size: 2rem;
 }
 
 #converted {
+    display: inline-block;
     background: #fff;
     padding-left: 20px;
     padding-right: 20px;
@@ -113,4 +150,26 @@ h1 {
     outline: none;
     border: 2px solid #000;
     box-shadow: 4px 4px 0 #000;
+}
+
+.result-animation {
+    animation: pop-up 0.2s ease;
+}
+
+@keyframes pop-up {
+    0% {
+        transform: translate(0, 0);
+        box-shadow: 4px 4px 0 #000;
+        color: rgba(0, 0, 0, 0);
+    }
+    50% {
+        transform: translate(2px, 2px);
+        box-shadow: 2px 2px 0 black;
+        color: rgba(0, 0, 0, 0.1);
+    }
+    100% {
+        transform: translate(0, 0);
+        box-shadow: 4px 4px 0 #000;
+        color: rgba(0, 0, 0, 1);
+    }
 }

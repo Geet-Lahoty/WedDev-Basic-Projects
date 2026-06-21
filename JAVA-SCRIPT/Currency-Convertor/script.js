@@ -54,4 +54,7 @@ async function changeCurrency(e) {
   const result = (amount * rate).toFixed(2);
 
   resultEL.textContent = `${amount} ${fromCurrency} = ${result} ${toCurrency}`;
+  resultEL.classList.remove("result-animation");
+  void resultEL.offsetWidth;
+  resultEL.classList.add("result-animation");
 }
